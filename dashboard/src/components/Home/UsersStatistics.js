@@ -10,7 +10,7 @@ const UsersStatistics = () => {
   const { loading, error, statistics } = useSelector(userStatisticsSelector);
 
   const MONTHS = useMemo(
-    () => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Agu', 'Sep', 'Oct', 'Nov', 'Dec'],
+    () => ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
     [],
   );
 
