@@ -9,7 +9,7 @@ import Message from '../Common/Error';
 import { CURRENCY } from '../../data/Constants';
 import { productListSelector } from '../../Redux/Product/ProductSelector';
 
-const ShopSection = ({ keyword, pagenumber }) => {
+const ShopSection = ({ keyword = '', pagenumber = '' }) => {
   const dispatch = useDispatch();
   const { loading, error, products, page, pages } = useSelector(productListSelector);
   useEffect(() => {
