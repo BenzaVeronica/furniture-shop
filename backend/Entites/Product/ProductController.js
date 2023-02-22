@@ -5,7 +5,7 @@ export default class ProductController {
   constructor() {}
 
   static getProducts = asyncHandler(async (req, res) => {
-    const pageSize = 11;
+    const pageSize = 9;
     const page = Number(req.query.pageNumber) || 1;
     const keyword = req.query.keyword
       ? {
